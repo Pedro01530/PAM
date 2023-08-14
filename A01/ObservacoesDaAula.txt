@@ -1,0 +1,7 @@
+Item 4 - Apenas alterar o que tem de diferente na criação do objeto user.
+
+Obs: 
+-Ajustar senha na string de conexão no arquivo AppSettings.json 
+--> 123456
+
+- Alterar o apontamento para ConexaoLocal na classe Program.cs

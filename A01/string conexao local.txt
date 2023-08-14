@@ -1,0 +1,1 @@
+Data Source=localhost; Initial Catalog=DB-DS-DS_2023_3AI_A1; User Id=sa; Password=123456;TrustServerCertificate=True

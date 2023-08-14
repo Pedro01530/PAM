@@ -1,0 +1,46 @@
+- Abrir Projeto no VS Code e compilar para se isentar de erros
+
+- Verificar se a classe Program.cs está apontando para a string de conexão local
+
+- Iniciar o serviço SQL no Windows --> Iniciar --> Services --> SQLSERVER (MSSQLSERVER) --> Clicar com direito --> Iniciar
+
+- Executar comando para executar as migrações no banco: dotnet ef database update
+
+- Abrir o SQL para confirmar que o banco foi criado.
+
+- Executar a API: dotnet run
+
+- Verificar os dois endpoints de testes
+	1. http://localhost:xyz/WeatherForecast
+	2. http://localhost:5164/Personagens/GetAll
+
+	* xyz --> número da porta da sua API
+
+
+Em caso de erro referente de cache do .net70, rodar o comando: 
+	
+- dotnet nuget locals all --clear
+
+
+Em caso de falta dos pacotes de mapeamento e criação do banco de dados:
+
+- Instalar os pacotes referentes ao Entity Framework:
+
+	1. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+	2. dotnet tool install --global dotnet-ef
+	3. dotnet add package Microsoft.EntityFrameworkCore.Design
+
+- Executar comando para executar as migrações no banco: dotnet ef database update
+
+- Não tem o .net framework ainda?
+https://dotnet.microsoft.com/en-us/download/dotnet
+
+- Não tem o Visual Studio Code ainda?
+https://code.visualstudio.com/download
+
+
+ Verificar os dois endpoints em publicações do somee
+	1. http://xyz.somee.com/RpgApi/WeatherForecast
+	2. http://xyz.somee.com/RpgApi/Personagens/GetAll
+
+	* xyz --> nome do seu subdomínio no somee.
